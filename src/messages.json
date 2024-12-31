@@ -1,11 +1,11 @@
 [
   {
-    "title": "Message from User123",
+    "title": "Message from SilentSpecter",
     "content": "Hey, how are you doing today?",
     "received": "10 minutes ago"
   },
   {
-    "title": "Message from SecretAdmirer",
+    "title": "Message from ShadowSoul",
     "content": "I really liked your recent post!",
     "received": "2 hours ago"
   },
@@ -13,5 +13,20 @@
     "title": "Message from MysteryGuest",
     "content": "Do you have any book recommendations?",
     "received": "1 day ago"
+  },
+  {
+    "title": "Message from PhantomWhisper",
+    "content": "What’s your favorite hobby?",
+    "received": "30 minutes ago"
+  },
+  {
+    "title": "Message from WraithWalker",
+    "content": "I saw your comment on the forum, great point!",
+    "received": "5 hours ago"
+  },
+  {
+    "title": "Message from CrypticScream",
+    "content": "What do you think about the latest movie?",
+    "received": "3 days ago"
   }
 ]

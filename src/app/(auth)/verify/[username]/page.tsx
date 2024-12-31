@@ -52,13 +52,13 @@ export default function VerifyAccount() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md">
+    <div className="flex justify-center items-center min-h-screen bg-[#111111]">
+      <div className="w-full max-w-md p-8 space-y-8 bg-black border border-gray-700 rounded-lg shadow-md">
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">
+          <h1 className="text-4xl font-extrabold tracking-tight lg:text-3xl mb-6 text-[#F8F8FF]">
             Verify Your Account
           </h1>
-          <p className="mb-4">Enter the verification code sent to your email</p>
+          <p className="mb-4 text-[#e2e2e7]">Enter the verification code sent to your email</p>
         </div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -67,13 +67,13 @@ export default function VerifyAccount() {
               control={form.control}
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Verification Code</FormLabel>
-                  <Input {...field} />
+                  <FormLabel className='text-[#e2e2e7]'>Verification Code</FormLabel>
+                  <Input {...field} className='bg-[#111111] text-white' />
                   <FormMessage />
                 </FormItem>
               )}
             />
-            <Button type="submit">Verify</Button>
+            <Button type="submit" className='bg-white text-black hover:bg-black hover:text-white border'>Verify</Button>
           </form>
         </Form>
       </div>

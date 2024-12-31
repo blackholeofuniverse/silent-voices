@@ -134,19 +134,19 @@ function UserDashboard() {
   };
 
   return (
-    <div className="my-8 mx-4 md:mx-8 lg:mx-auto p-6 bg-white rounded w-full max-w-6xl">
-      <h1 className="text-4xl font-bold mb-4">User Dashboard</h1>
+    <div className="my-8 mx-4 md:mx-8 lg:mx-auto p-6 bg-[#111111] rounded w-full max-w-6xl">
+      <h1 className="text-4xl font-bold mb-4 text-[#F8F8FF]">User Dashboard</h1>
 
       <div className="mb-4">
-        <h2 className="text-lg font-semibold mb-2">Copy Your Unique Link</h2>{' '}
+        <h2 className="text-lg font-semibold mb-2 text-[#e2e2e7]">Copy Your Unique Link</h2>{' '}
         <div className="flex items-center">
           <input
             type="text"
             value={profileUrl}
             disabled
-            className="input input-bordered w-full p-2 mr-2"
+            className="input input-bordered w-full p-2 mr-2 bg-black border border-gray-700 rounded-lg text-zinc-300"
           />
-          <Button onClick={copyToClipboard}>Copy</Button>
+          <Button onClick={copyToClipboard} className='bg-white text-black hover:bg-black hover:text-white border'>Copy</Button>
         </div>
       </div>
 
@@ -157,7 +157,7 @@ function UserDashboard() {
           onCheckedChange={handleSwitchChange}
           disabled={isSwitchLoading}
         />
-        <span className="ml-2">
+        <span className="ml-2 text-[#e2e2e7]">
           Accept Messages: {acceptMessages ? 'On' : 'Off'}
         </span>
       </div>
@@ -187,7 +187,7 @@ function UserDashboard() {
             />
           ))
         ) : (
-          <p>No messages to display.</p>
+          <p className='text-zinc-500'>No messages to display.</p>
         )}
       </div>
     </div>
